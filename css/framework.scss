@@ -1,0 +1,44 @@
+/*
+ * @import " " استيراد صفحة خارجية 
+ * @extend %elemnt-center; بيواسط العنصر فى الناص
+ * @extend %mystayl1; طريقة استخدام خواص عنصر زاى البليس هولدار يعنى ميعملوش كلاس 
+ * @include bordrradius(5px); الانكلود خاص بى المكس فى البوردار ريديوس و تكتب الرقام اللى انت عاوزة  
+ * @include cover(cover); الانكلود الخاص بى الباك جرواند سيز كافار فى العناصر اللى انت عاوز الصورة تكون خلفية ليه 
+ * @include transition(all 0.5s ease-in-out); الانكلود ده خاص بى الميكسان للترنزيشان
+ * @include scale(1.2); اللى هو انو العنصار يجى عليك بركام
+ * @include rotate(10deg);اللى هو العنصار يلاف بزاوية معينة
+ * padding-top: function-number(1px); فى الفانكشان هيزاود عشرة على الرقام اللى هتكتبو و ده طرية كتابة الفانكشان و شغالة مع اى حاجة بتاخد رقام
+ * 
+ * 
+ * */
+
+/* استدعا صافحة العناصر الجلوبال  */
+@import "globel/globel";
+/* استدعا صفحة زورار الاسكروال  */
+@import "button-scroll/button-scroll";
+/* استدعا صفحة فريبال الخطوط */
+@import "var/var-fonts";
+/* استدعا صافحة الماكسان */
+@import "mixin/mixin";
+/* استدعا صافحة الفانكشان */
+@import "function/function";
+
+.test {
+    position: relative;
+    @include cover(cover);
+    @include bordrradius(20px);
+    @include transition(all 0.5s ease-in-out);
+    padding-top: function-number(0px);
+    background-color: aqua;
+    //font-family: $crimsonfont-en;
+
+}
+
+.test h2 {}
+
+.test:hover {
+    @include scale(1.2);
+}
+
+/**********************/
+/**********************/

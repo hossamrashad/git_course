@@ -1,0 +1,4 @@
+@function function-number($ele) {
+    /* كدا انا قالت للفانكشان ترجاعلى المتغاير و تزود علية 10 */
+    @return $ele + 10;
+}

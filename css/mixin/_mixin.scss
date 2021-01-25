@@ -1,0 +1,39 @@
+/* @mixin يعنى عامله زاى الفانكشان و بعدين الرقام اللى انا اكتبو لكل عنصر يتغيار  */
+/* bordRadius اللى هو اسم الفانكشان  */
+/* ($r) اللى هو الراقام اللى انت هتحدد لكل عنصار  */
+@mixin bordrradius($r) {
+    -webkit-border-radius: $r;
+    -moz-border-radius: $r;
+    -o-border-radius: $r;
+    -ms-border-radius: $r;
+    border-radius: $r;
+}
+
+@mixin transition($r) {
+    -webkit-transition: $r;
+    -moz-transition: $r;
+    -o-transition: $r;
+    -ms-transition: $r;
+    transition: $r;
+}
+
+@mixin cover($r) {
+    -webkit-background-size: $r;
+    -moz-background-size: $r;
+    -o-background-size: $r;
+    background-size: $r;
+}
+
+@mixin scale($r) {
+    -webkit-transform: scale($r);
+    -moz-transform: scale($r);
+    -o-transform: scale($r);
+    transform: scale($r);
+}
+
+@mixin rotate($r) {
+    -webkit-transform: rotate($r);
+    -moz-transform: rotate($r);
+    -o-transform: rotate($r);
+    transform: rotate($r);
+}

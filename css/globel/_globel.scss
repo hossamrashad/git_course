@@ -1,0 +1,21 @@
+* {
+    /* علشان ميحسابش البادانج و البوردار  */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 2000px;
+
+}
+
+/* start elment center */
+%elemnt-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* end elment center */

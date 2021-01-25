@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/*
+ * @import " " استيراد صفحة خارجية 
+ * @extend %elemnt-center; بيواسط العنصر فى الناص
+ * @extend %mystayl1; طريقة استخدام خواص عنصر زاى البليس هولدار يعنى ميعملوش كلاس 
+ * @include bordrradius(5px); الانكلود خاص بى المكس فى البوردار ريديوس و تكتب الرقام اللى انت عاوزة  
+ * @include cover(cover); الانكلود الخاص بى الباك جرواند سيز كافار فى العناصر اللى انت عاوز الصورة تكون خلفية ليه 
+ * @include transition(all 0.5s ease-in-out); الانكلود ده خاص بى الميكسان للترنزيشان
+ * @include scale(1.2); اللى هو انو العنصار يجى عليك بركام
+ * @include rotate(10deg);اللى هو العنصار يلاف بزاوية معينة
+ * padding-top: function-number(1px); فى الفانكشان هيزاود عشرة على الرقام اللى هتكتبو و ده طرية كتابة الفانكشان و شغالة مع اى حاجة بتاخد رقام
+ * 
+ * 
+ * */
+/* استدعا صافحة العناصر الجلوبال  */
+* {
+  /* علشان ميحسابش البادانج و البوردار  */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 2000px;
+}
+
+/* start elment center */
+/* end elment center */
+/* استدعا صفحة زورار الاسكروال  */
+/* Start scroll-top */
+#scroll-top {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #ec1c23;
+  background-color: #08526d;
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  z-index: 12;
+  display: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#scroll-down {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  background-color: #000;
+  position: fixed;
+  text-align: center;
+  right: 15px;
+  bottom: 10px;
+  z-index: 11;
+  cursor: pointer;
+  border-radius: 50%;
+  display: none;
+}
+
+/* End scroll-top */
+/* استدعا صفحة فريبال الخطوط */
+/* var font arabic */
+/* var font english */
+/* استدعا صافحة الماكسان */
+/* @mixin يعنى عامله زاى الفانكشان و بعدين الرقام اللى انا اكتبو لكل عنصر يتغيار  */
+/* bordRadius اللى هو اسم الفانكشان  */
+/* ($r) اللى هو الراقام اللى انت هتحدد لكل عنصار  */
+/* استدعا صافحة الفانكشان */
+.test {
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  padding-top: 10px;
+  background-color: aqua;
+}
+
+.test:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/**********************/
+/**********************/
+
+/*# sourceMappingURL=framework.css.map */
